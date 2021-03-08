@@ -1,0 +1,1373 @@
+09:51:24.217 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 632 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+09:51:24.248 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+09:51:27.477 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatissqlsSqlSessionTemplate' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Unsatisfied dependency expressed through method 'mybatissqlsSqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.apache.ibatis.session.SqlSessionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=MybatisSqlSessionFactory)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at ksmart38.mybatis.MybatisApplication.main(MybatisApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.apache.ibatis.session.SqlSessionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=MybatisSqlSessionFactory)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 25 common frames omitted
+10:22:32.339 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+10:22:32.339 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+10:22:35.146 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 3.307 seconds (JVM running for 4.086)
+12:12:48.686 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:12:48.686 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:12:49.327 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.691 seconds (JVM running for 6618.273)
+12:13:07.486 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:13:07.486 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:13:08.018 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.575 seconds (JVM running for 6636.964)
+12:14:48.268 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:14:48.268 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:14:48.753 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.524 seconds (JVM running for 6737.699)
+12:15:54.877 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:15:54.877 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:15:55.357 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.507 seconds (JVM running for 6804.294)
+12:19:33.968 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:19:33.968 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:19:34.436 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.508 seconds (JVM running for 7023.387)
+12:19:56.357 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:19:56.357 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:19:56.780 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.456 seconds (JVM running for 7045.724)
+12:20:01.422 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:20:01.422 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:20:01.828 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.436 seconds (JVM running for 7050.766)
+12:20:22.117 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:20:22.117 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:20:22.556 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.474 seconds (JVM running for 7071.503)
+12:20:37.365 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:20:37.365 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:20:37.797 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.456 seconds (JVM running for 7086.733)
+12:21:09.938 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:21:09.938 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:21:10.382 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.47 seconds (JVM running for 7119.319)
+12:21:51.663 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:21:51.663 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:21:52.133 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.496 seconds (JVM running for 7161.07)
+12:21:59.898 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:21:59.898 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:22:01.727 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 1.885 seconds (JVM running for 7170.678)
+12:22:50.998 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:22:50.998 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:22:52.058 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 1.092 seconds (JVM running for 7220.994)
+12:23:21.886 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:23:21.887 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:23:22.311 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.455 seconds (JVM running for 7251.248)
+12:23:34.333 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:23:34.333 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:23:34.744 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.442 seconds (JVM running for 7263.68)
+12:23:56.761 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:23:56.761 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:23:57.220 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.487 seconds (JVM running for 7286.157)
+12:24:06.099 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:24:06.100 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:24:06.516 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.441 seconds (JVM running for 7295.453)
+12:24:32.859 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:24:32.860 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:24:33.256 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.418 seconds (JVM running for 7322.192)
+12:24:51.156 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:24:51.156 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:24:51.521 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.389 seconds (JVM running for 7340.458)
+12:25:24.969 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:25:24.970 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:25:25.559 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.611 seconds (JVM running for 7374.495)
+12:25:32.290 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:25:32.290 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:25:32.663 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.393 seconds (JVM running for 7381.6)
+12:27:33.152 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:27:33.153 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:27:33.642 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webConfig' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\config\WebConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [ksmart38.mybatis.config.WebConfig$$EnhancerBySpringCGLIB$$9e88da13]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	CommonInterceptor cannot be resolved to a type
+	interceptor cannot be resolved to a variable
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1216)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at ksmart38.mybatis.MybatisApplication.main(MybatisApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [ksmart38.mybatis.config.WebConfig$$EnhancerBySpringCGLIB$$9e88da13]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	CommonInterceptor cannot be resolved to a type
+	interceptor cannot be resolved to a variable
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1310)
+	... 23 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	CommonInterceptor cannot be resolved to a type
+	interceptor cannot be resolved to a variable
+	Syntax error, insert ";" to complete BlockStatements
+
+	at ksmart38.mybatis.config.WebConfig.<init>(WebConfig.java:10)
+	at ksmart38.mybatis.config.WebConfig$$EnhancerBySpringCGLIB$$9e88da13.<init>(<generated>)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212)
+	... 25 common frames omitted
+12:27:41.316 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:27:41.317 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:27:41.589 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webConfig' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\config\WebConfig.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [ksmart38.mybatis.config.WebConfig$$EnhancerBySpringCGLIB$$9e88da13]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The blank final field commonInterceptor may not have been initialized
+	interceptor cannot be resolved to a variable
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1216)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at ksmart38.mybatis.MybatisApplication.main(MybatisApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [ksmart38.mybatis.config.WebConfig$$EnhancerBySpringCGLIB$$9e88da13]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The blank final field commonInterceptor may not have been initialized
+	interceptor cannot be resolved to a variable
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1310)
+	... 23 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The blank final field commonInterceptor may not have been initialized
+	interceptor cannot be resolved to a variable
+	Syntax error, insert ";" to complete BlockStatements
+
+	at ksmart38.mybatis.config.WebConfig.<init>(WebConfig.java:12)
+	at ksmart38.mybatis.config.WebConfig$$EnhancerBySpringCGLIB$$9e88da13.<init>(<generated>)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212)
+	... 25 common frames omitted
+12:29:30.389 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:29:30.389 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:29:30.730 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	interceptor cannot be resolved to a variable
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at ksmart38.mybatis.MybatisApplication.main(MybatisApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	interceptor cannot be resolved to a variable
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 25 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	interceptor cannot be resolved to a variable
+	Syntax error, insert ";" to complete BlockStatements
+
+	at ksmart38.mybatis.config.WebConfig.addInterceptors(WebConfig.java:21)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.addInterceptors(WebMvcConfigurerComposite.java:88)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.addInterceptors(DelegatingWebMvcConfiguration.java:83)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.getInterceptors(WebMvcConfigurationSupport.java:361)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.requestMappingHandlerMapping(WebMvcConfigurationSupport.java:309)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration.requestMappingHandlerMapping(WebMvcAutoConfiguration.java:395)
+	at sun.reflect.GeneratedMethodAccessor255.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 26 common frames omitted
+12:29:55.668 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:29:55.669 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:29:56.023 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at ksmart38.mybatis.MybatisApplication.main(MybatisApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 25 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at ksmart38.mybatis.config.WebConfig.addInterceptors(WebConfig.java:21)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.addInterceptors(WebMvcConfigurerComposite.java:88)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.addInterceptors(DelegatingWebMvcConfiguration.java:83)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.getInterceptors(WebMvcConfigurationSupport.java:361)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.requestMappingHandlerMapping(WebMvcConfigurationSupport.java:309)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration.requestMappingHandlerMapping(WebMvcAutoConfiguration.java:395)
+	at sun.reflect.GeneratedMethodAccessor255.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 26 common frames omitted
+12:30:02.689 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:30:02.689 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:30:03.126 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.456 seconds (JVM running for 7652.063)
+12:30:52.491 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:30:52.491 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:30:52.825 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at ksmart38.mybatis.MybatisApplication.main(MybatisApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 25 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at ksmart38.mybatis.config.WebConfig.addInterceptors(WebConfig.java:22)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.addInterceptors(WebMvcConfigurerComposite.java:88)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.addInterceptors(DelegatingWebMvcConfiguration.java:83)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.getInterceptors(WebMvcConfigurationSupport.java:361)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.requestMappingHandlerMapping(WebMvcConfigurationSupport.java:309)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration.requestMappingHandlerMapping(WebMvcAutoConfiguration.java:395)
+	at sun.reflect.GeneratedMethodAccessor255.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 26 common frames omitted
+12:31:38.156 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:31:38.156 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:31:38.777 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at ksmart38.mybatis.MybatisApplication.main(MybatisApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 25 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at ksmart38.mybatis.config.WebConfig.addInterceptors(WebConfig.java:23)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.addInterceptors(WebMvcConfigurerComposite.java:88)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.addInterceptors(DelegatingWebMvcConfiguration.java:83)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.getInterceptors(WebMvcConfigurationSupport.java:361)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.requestMappingHandlerMapping(WebMvcConfigurationSupport.java:309)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration.requestMappingHandlerMapping(WebMvcAutoConfiguration.java:395)
+	at sun.reflect.GeneratedMethodAccessor255.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 26 common frames omitted
+12:31:50.546 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:31:50.547 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:31:50.839 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at ksmart38.mybatis.MybatisApplication.main(MybatisApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 25 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at ksmart38.mybatis.config.WebConfig.addInterceptors(WebConfig.java:24)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.addInterceptors(WebMvcConfigurerComposite.java:88)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.addInterceptors(DelegatingWebMvcConfiguration.java:83)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.getInterceptors(WebMvcConfigurationSupport.java:361)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.requestMappingHandlerMapping(WebMvcConfigurationSupport.java:309)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration.requestMappingHandlerMapping(WebMvcAutoConfiguration.java:395)
+	at sun.reflect.GeneratedMethodAccessor255.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 26 common frames omitted
+12:31:55.336 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:31:55.336 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:31:55.657 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at ksmart38.mybatis.MybatisApplication.main(MybatisApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 25 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at ksmart38.mybatis.config.WebConfig.addInterceptors(WebConfig.java:24)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.addInterceptors(WebMvcConfigurerComposite.java:88)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.addInterceptors(DelegatingWebMvcConfiguration.java:83)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.getInterceptors(WebMvcConfigurationSupport.java:361)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.requestMappingHandlerMapping(WebMvcConfigurationSupport.java:309)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration.requestMappingHandlerMapping(WebMvcAutoConfiguration.java:395)
+	at sun.reflect.GeneratedMethodAccessor255.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 26 common frames omitted
+12:32:24.633 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9444 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:32:24.633 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:32:25.052 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.439 seconds (JVM running for 7793.989)
+12:32:29.534 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 8424 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:32:29.536 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:32:33.131 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+12:42:59.855 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+12:42:59.857 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+12:42:59.857 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+12:42:59.858 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+12:42:59.858 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+12:42:59.858 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+12:42:59.858 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+12:42:59.859 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+12:42:59.884 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+12:43:03.355 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+12:43:03.356 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+12:43:03.357 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+12:43:03.358 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+12:43:03.358 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: POST
+12:43:03.358 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+12:43:03.358 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+12:43:03.431 [http-nio-80-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+398. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id001';
+ {executed in 12 msec}
+12:43:03.447 [http-nio-80-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+398. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id001';
+ {executed in 0 msec}
+12:43:03.448 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+12:43:03.453 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+12:43:07.214 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+12:43:07.214 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+12:43:07.214 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+12:43:07.215 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+12:43:07.215 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+12:43:07.215 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /memberList
+12:43:07.215 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+12:43:07.238 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+398. SELECT 
+			m_id 			
+			,m_pw 		
+			,m_name 		
+			,m_level 
+			,m_email 	
+			,m_addr 		
+			,m_reg_date
+		FROM
+			tb_member AS m
+		LEFT JOIN
+			tb_member_level AS l
+		ON
+			m.m_level = l.level_num
+ {executed in 1 msec}
+12:43:07.250 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+12:43:07.331 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+12:43:41.154 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+12:43:41.155 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+12:43:41.155 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+12:43:41.155 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+12:43:41.155 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+12:43:41.155 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /logout
+12:43:41.155 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+12:43:41.159 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+12:43:41.160 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+12:43:44.154 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+12:43:44.154 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+12:43:44.155 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+12:43:44.155 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+12:43:44.155 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+12:43:44.155 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+12:43:44.155 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+12:43:44.155 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+12:43:44.172 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+12:43:47.944 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+12:43:47.944 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+12:43:47.944 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+12:43:47.944 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+12:43:47.944 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: POST
+12:43:47.944 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+12:43:47.945 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+12:43:47.947 [http-nio-80-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+398. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id001';
+ {executed in 0 msec}
+12:43:47.948 [http-nio-80-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+398. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id001';
+ {executed in 0 msec}
+12:43:47.949 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+12:43:47.950 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+12:44:17.029 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9604 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:44:17.032 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:44:20.102 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+12:45:50.162 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 11584 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+12:45:50.165 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+12:45:53.124 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 3.466 seconds (JVM running for 4.261)
+12:46:00.472 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+12:46:00.475 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+12:46:00.476 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+12:46:00.478 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+12:46:00.478 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+12:46:00.478 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /logout
+12:46:00.478 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+12:46:00.501 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+12:46:00.509 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+12:46:02.346 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+12:46:02.346 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+12:46:02.347 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+12:46:02.347 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+12:46:02.347 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+12:46:02.347 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+12:46:02.347 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+12:46:02.347 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+12:46:02.379 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+12:46:06.248 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+12:46:06.249 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+12:46:06.249 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+12:46:06.249 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+12:46:06.249 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: POST
+12:46:06.250 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+12:46:06.250 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+12:46:06.332 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id001';
+ {executed in 12 msec}
+12:46:06.346 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id001';
+ {executed in 1 msec}
+12:46:06.347 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+12:46:06.348 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:03:00.614 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+14:03:00.617 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+14:03:03.769 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 3.659 seconds (JVM running for 4.726)
+14:03:14.425 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:03:14.426 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:03:14.426 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:03:14.427 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:03:14.427 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:03:14.428 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /memberList
+14:03:14.428 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:03:14.438 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+14:03:14.438 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::null
+14:03:14.438 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::null
+14:03:14.438 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:03:14.444 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:03:14.445 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:03:14.445 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:03:14.445 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:03:14.445 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:03:14.445 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+14:03:14.445 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:03:14.446 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:03:14.478 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:06:42.362 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:06:42.363 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:06:42.363 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:06:42.363 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:06:42.363 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: POST
+14:06:42.363 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+14:06:42.363 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:06:42.429 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id001';
+ {executed in 12 msec}
+14:06:42.444 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id001';
+ {executed in 2 msec}
+14:06:42.446 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:06:42.452 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:06:44.886 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:06:44.886 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:06:44.886 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:06:44.886 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:06:44.886 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:06:44.886 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /logout
+14:06:44.886 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:06:44.888 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:06:44.891 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:06:45.874 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:06:45.874 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:06:45.874 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:06:45.874 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:06:45.874 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:06:45.874 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+14:06:45.874 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:06:45.875 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:06:45.891 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:06:50.094 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:06:50.094 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:06:50.094 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:06:50.094 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:06:50.095 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: POST
+14:06:50.095 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+14:06:50.095 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:06:50.098 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id012';
+ {executed in 1 msec}
+14:06:50.101 [http-nio-80-exec-6] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id012';
+ {executed in 1 msec}
+14:06:50.102 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:06:50.103 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:07:15.201 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:07:15.201 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:07:15.201 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:07:15.201 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:07:15.202 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:07:15.202 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /logout
+14:07:15.202 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:07:15.202 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:07:15.202 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:07:51.155 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+14:07:51.156 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+14:07:51.856 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.745 seconds (JVM running for 292.814)
+14:09:34.072 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:09:34.073 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:09:34.073 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:09:34.073 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:09:34.073 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:09:34.073 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /memberList
+14:09:34.073 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:09:34.074 [http-nio-80-exec-1] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+14:09:34.074 [http-nio-80-exec-1] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::null
+14:09:34.074 [http-nio-80-exec-1] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::null
+14:09:34.074 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:09:34.083 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:09:34.084 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:09:34.084 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:09:34.084 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:09:34.086 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:09:34.087 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+14:09:34.087 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:09:34.089 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:09:34.157 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:11:38.527 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:11:38.528 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:11:38.528 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:11:38.528 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:11:38.528 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:11:38.528 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+14:11:38.528 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:11:38.529 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:11:38.552 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:11:45.207 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:11:45.207 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:11:45.207 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:11:45.207 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:11:45.208 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: POST
+14:11:45.208 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+14:11:45.208 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:11:45.211 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+16. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id001';
+ {executed in 1 msec}
+14:11:45.213 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+16. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id001';
+ {executed in 1 msec}
+14:11:45.214 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:11:45.219 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:13:19.070 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:13:19.071 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:13:19.071 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:13:19.071 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:13:19.071 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:13:19.071 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /logout
+14:13:19.071 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:13:19.071 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:13:19.072 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:13:22.604 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:13:22.604 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:13:22.604 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:13:22.604 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:13:22.604 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:13:22.604 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+14:13:22.604 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:13:22.604 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:13:22.618 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:13:24.970 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:13:24.970 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:13:24.970 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:13:24.970 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:13:24.970 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: POST
+14:13:24.970 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+14:13:24.970 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:13:24.973 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+16. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id001';
+ {executed in 0 msec}
+14:13:24.975 [http-nio-80-exec-8] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+16. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id001';
+ {executed in 0 msec}
+14:13:24.975 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:13:24.978 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:14:02.188 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:14:02.189 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:14:02.189 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:14:02.189 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:14:02.189 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:14:02.189 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /addMember
+14:14:02.189 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:14:02.189 [http-nio-80-exec-1] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+14:14:02.189 [http-nio-80-exec-1] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id001
+14:14:02.189 [http-nio-80-exec-1] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::관리자
+14:14:02.189 [http-nio-80-exec-1] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- END
+14:14:02.190 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:14:02.204 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:14:58.517 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:14:58.517 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:14:58.517 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:14:58.517 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:14:58.517 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:14:58.517 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /logout
+14:14:58.517 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:14:58.517 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:14:58.518 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:16:21.749 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+14:16:21.749 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+14:16:22.265 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.557 seconds (JVM running for 803.234)
+14:18:50.560 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+14:18:50.560 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+14:18:51.045 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.521 seconds (JVM running for 952.008)
+14:26:03.403 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+14:26:03.403 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+14:26:03.998 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.643 seconds (JVM running for 1384.969)
+14:26:15.809 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+14:26:15.809 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+14:26:16.263 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.494 seconds (JVM running for 1397.235)
+14:26:18.687 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:26:18.688 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:26:18.688 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:26:18.688 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:26:18.688 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:26:18.689 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+14:26:18.689 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:26:18.691 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:26:18.755 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:26:19.103 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+14:26:19.106 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+14:26:19.581 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.517 seconds (JVM running for 1400.547)
+14:26:24.271 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:26:24.272 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:26:24.272 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:26:24.272 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:26:24.272 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: POST
+14:26:24.272 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+14:26:24.272 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:26:24.278 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+91. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id012';
+ {executed in 1 msec}
+14:26:24.280 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+91. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id012';
+ {executed in 0 msec}
+14:26:24.280 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:26:24.282 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:26:36.963 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:26:36.963 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:26:36.963 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:26:36.963 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:26:36.963 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:26:36.963 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /addGoods
+14:26:36.963 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:26:36.965 [http-nio-80-exec-4] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+14:26:36.965 [http-nio-80-exec-4] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id012
+14:26:36.965 [http-nio-80-exec-4] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::판매자
+14:26:36.965 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:26:39.010 [http-nio-80-exec-7] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:26:39.010 [http-nio-80-exec-7] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:26:39.011 [http-nio-80-exec-7] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:26:39.011 [http-nio-80-exec-7] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:26:39.011 [http-nio-80-exec-7] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:26:39.011 [http-nio-80-exec-7] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /addGoods
+14:26:39.011 [http-nio-80-exec-7] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:26:39.011 [http-nio-80-exec-7] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+14:26:39.011 [http-nio-80-exec-7] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id012
+14:26:39.012 [http-nio-80-exec-7] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::판매자
+14:26:39.013 [http-nio-80-exec-7] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:26:39.423 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:26:39.423 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:26:39.423 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:26:39.423 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:26:39.423 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:26:39.423 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /addGoods
+14:26:39.423 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:26:39.423 [http-nio-80-exec-10] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+14:26:39.423 [http-nio-80-exec-10] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id012
+14:26:39.423 [http-nio-80-exec-10] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::판매자
+14:26:39.423 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:26:39.569 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:26:39.569 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:26:39.569 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:26:39.569 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:26:39.569 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:26:39.569 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /addGoods
+14:26:39.569 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:26:39.569 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+14:26:39.569 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id012
+14:26:39.569 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::판매자
+14:26:39.569 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:26:39.721 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:26:39.721 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:26:39.721 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:26:39.721 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:26:39.721 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:26:39.721 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /addGoods
+14:26:39.721 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:26:39.721 [http-nio-80-exec-6] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+14:26:39.721 [http-nio-80-exec-6] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id012
+14:26:39.721 [http-nio-80-exec-6] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::판매자
+14:26:39.721 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:26:39.855 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:26:39.855 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:26:39.855 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:26:39.855 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:26:39.855 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:26:39.855 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /addGoods
+14:26:39.855 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:26:39.855 [http-nio-80-exec-9] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+14:26:39.855 [http-nio-80-exec-9] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id012
+14:26:39.855 [http-nio-80-exec-9] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::판매자
+14:26:39.856 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:26:53.436 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:26:53.436 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:26:53.436 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:26:53.436 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:26:53.436 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:26:53.436 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /addGoods
+14:26:53.436 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:26:53.437 [http-nio-80-exec-2] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+14:26:53.437 [http-nio-80-exec-2] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id012
+14:26:53.437 [http-nio-80-exec-2] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::판매자
+14:26:53.437 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:26:53.894 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:26:53.894 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:26:53.894 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:26:53.894 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:26:53.895 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:26:53.895 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /addGoods
+14:26:53.895 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:26:53.895 [http-nio-80-exec-5] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+14:26:53.895 [http-nio-80-exec-5] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id012
+14:26:53.895 [http-nio-80-exec-5] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::판매자
+14:26:53.895 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:26:54.048 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:26:54.048 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:26:54.048 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:26:54.048 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:26:54.048 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:26:54.048 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /addGoods
+14:26:54.048 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:26:54.048 [http-nio-80-exec-8] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+14:26:54.048 [http-nio-80-exec-8] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id012
+14:26:54.048 [http-nio-80-exec-8] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::판매자
+14:26:54.048 [http-nio-80-exec-8] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:26:54.190 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:26:54.191 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:26:54.191 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:26:54.191 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:26:54.191 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:26:54.191 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /addGoods
+14:26:54.191 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:26:54.191 [http-nio-80-exec-1] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+14:26:54.191 [http-nio-80-exec-1] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id012
+14:26:54.191 [http-nio-80-exec-1] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::판매자
+14:26:54.191 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:26:54.342 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:26:54.342 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:26:54.342 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:26:54.342 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:26:54.343 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:26:54.343 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /addGoods
+14:26:54.343 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:26:54.343 [http-nio-80-exec-4] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+14:26:54.343 [http-nio-80-exec-4] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id012
+14:26:54.343 [http-nio-80-exec-4] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::판매자
+14:26:54.343 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:27:16.126 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+14:27:16.126 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+14:27:16.579 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.488 seconds (JVM running for 1457.544)
+14:27:30.720 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:27:30.721 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:27:30.721 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:27:30.721 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:27:30.721 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:27:30.721 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /addGoods
+14:27:30.721 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:27:30.721 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+14:27:30.721 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id012
+14:27:30.721 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::판매자
+14:27:30.723 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- END
+14:27:30.723 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:27:30.737 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:46:31.112 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+14:46:31.112 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+14:46:31.597 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.511 seconds (JVM running for 2612.556)
+14:53:44.917 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+14:53:44.917 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+14:53:45.428 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.543 seconds (JVM running for 3046.393)
+14:53:46.239 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:53:46.239 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:53:46.239 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:53:46.239 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:53:46.239 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:53:46.239 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /addGoods
+14:53:46.239 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:53:46.239 [http-nio-80-exec-1] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+14:53:46.239 [http-nio-80-exec-1] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id012
+14:53:46.239 [http-nio-80-exec-1] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::판매자
+14:53:46.240 [http-nio-80-exec-1] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- END
+14:53:46.240 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:53:46.289 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:53:46.765 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:53:46.765 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:53:46.765 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:53:46.765 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:53:46.766 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:53:46.766 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /logout
+14:53:46.766 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:53:46.766 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:53:46.767 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:53:48.493 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:53:48.493 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:53:48.493 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:53:48.493 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:53:48.493 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:53:48.493 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+14:53:48.493 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:53:48.495 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:53:48.504 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:54:05.348 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+14:54:05.348 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+14:54:05.785 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.466 seconds (JVM running for 3066.747)
+14:54:24.812 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+14:54:24.812 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+14:54:25.324 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.543 seconds (JVM running for 3086.282)
+14:54:25.465 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:54:25.466 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:54:25.466 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:54:25.466 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:54:25.466 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:54:25.466 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+14:54:25.466 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:54:25.467 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:54:25.508 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:54:28.576 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:54:28.576 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:54:28.576 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:54:28.576 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:54:28.576 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: POST
+14:54:28.576 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+14:54:28.576 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:54:28.583 [http-nio-80-exec-3] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+166. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id012';
+ {executed in 1 msec}
+14:54:28.585 [http-nio-80-exec-3] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+166. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id012';
+ {executed in 1 msec}
+14:54:28.586 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+14:54:28.588 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+14:54:34.003 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+14:54:34.003 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+14:54:34.003 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+14:54:34.003 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+14:54:34.004 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+14:54:34.004 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /memberList
+14:54:34.004 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+14:54:34.004 [http-nio-80-exec-6] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+14:54:34.004 [http-nio-80-exec-6] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id012
+14:54:34.004 [http-nio-80-exec-6] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::판매자
+14:54:34.004 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+15:05:45.468 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+15:05:45.468 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+15:05:45.468 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+15:05:45.468 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+15:05:45.468 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+15:05:45.468 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /addGoods
+15:05:45.468 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+15:05:45.468 [http-nio-80-exec-2] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+15:05:45.468 [http-nio-80-exec-2] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id012
+15:05:45.468 [http-nio-80-exec-2] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::판매자
+15:05:45.468 [http-nio-80-exec-2] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+15:06:45.262 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+15:06:45.262 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+15:06:45.715 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.479 seconds (JVM running for 3826.674)
+15:06:59.364 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+15:06:59.364 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+15:06:59.364 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+15:06:59.364 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+15:06:59.364 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+15:06:59.364 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /memberList
+15:06:59.364 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+15:06:59.364 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+15:06:59.364 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id012
+15:06:59.364 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::판매자
+15:06:59.395 [http-nio-80-exec-3] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+181. SELECT 
+			m_id 			
+			,m_pw 		
+			,m_name 		
+			,m_level 
+			,m_email 	
+			,m_addr 		
+			,m_reg_date
+		FROM
+			tb_member AS m
+		LEFT JOIN
+			tb_member_level AS l
+		ON
+			m.m_level = l.level_num
+ {executed in 1 msec}
+15:06:59.401 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- END
+15:06:59.401 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+15:06:59.464 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+15:07:26.053 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+15:07:26.053 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+15:07:26.667 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.649 seconds (JVM running for 3867.625)
+15:07:31.018 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+15:07:31.019 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+15:07:31.019 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+15:07:31.019 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+15:07:31.019 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+15:07:31.019 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /memberList
+15:07:31.019 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+15:07:31.019 [http-nio-80-exec-4] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+15:07:31.019 [http-nio-80-exec-4] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id012
+15:07:31.019 [http-nio-80-exec-4] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::판매자
+15:07:31.019 [http-nio-80-exec-4] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+15:55:53.367 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+15:55:53.368 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+15:55:54.040 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.712 seconds (JVM running for 6775.01)
+15:56:11.815 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+15:56:11.816 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+15:56:12.285 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.505 seconds (JVM running for 6793.246)
+15:56:42.403 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+15:56:42.403 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+15:56:42.809 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.44 seconds (JVM running for 6823.778)
+16:10:40.541 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:10:40.542 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:10:40.980 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.48 seconds (JVM running for 7661.95)
+16:10:52.001 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:10:52.001 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:10:52.563 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.61 seconds (JVM running for 7673.533)
+16:11:15.510 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6848 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:11:15.510 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:11:15.917 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.44 seconds (JVM running for 7696.887)

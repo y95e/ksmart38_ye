@@ -1,0 +1,119 @@
+16:21:41.225 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 8144 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:21:41.225 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:21:41.897 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.69 seconds (JVM running for 4673.344)
+16:22:11.976 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 8144 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:22:11.976 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:22:12.414 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.464 seconds (JVM running for 4703.864)
+16:22:16.069 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 8144 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:22:16.069 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:22:16.226 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+16:22:16.226 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+16:22:16.288 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+16:22:16.288 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+16:22:16.288 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:22:16.288 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+16:22:16.304 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:22:16.304 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 235 ms
+16:22:16.382 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:22:16.429 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Starting...
+16:22:16.444 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Start completed.
+16:22:16.444 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:22:16.460 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+16:22:16.460 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+16:22:16.460 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.418 seconds (JVM running for 4707.912)
+16:22:16.460 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+16:22:24.012 [Thread-102] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+16:22:24.021 [Thread-102] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Shutdown initiated...
+16:22:24.023 [Thread-102] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-20 - Shutdown completed.
+16:22:24.132 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 8144 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:22:24.148 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:22:24.507 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.398 seconds (JVM running for 4715.963)
+16:23:05.201 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 652 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:23:05.201 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:23:08.118 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 3.43 seconds (JVM running for 4.256)
+16:23:16.863 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 652 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:23:16.863 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:23:17.957 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 1.136 seconds (JVM running for 14.101)
+16:23:19.629 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 652 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:23:19.629 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:23:20.083 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.485 seconds (JVM running for 16.219)
+16:24:34.084 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. SELECT 
+			g.g_code, 
+			g.g_name, 
+			g.g_price, 
+			g.g_seller_id, 
+			g.g_reg_date,
+			m.m_name,
+			m.m_email
+		FROM 
+			tb_goods AS g
+			INNER JOIN
+			tb_member AS m
+			ON
+			g.g_seller_id = m.m_id
+
+		ORDER BY g_code;
+ {executed in 12 msec}
+16:24:46.572 [http-nio-80-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id001';
+ {executed in 1 msec}
+16:24:46.575 [http-nio-80-exec-5] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id001';
+ {executed in 1 msec}
+16:27:12.012 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 652 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:27:12.012 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:27:12.395 [restartedMain] ERROR k.mybatis.service.MemberService - MemberService ::::::::{}
+16:27:12.520 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.553 seconds (JVM running for 248.667)
+16:27:22.312 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 652 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:27:22.312 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:27:22.641 [restartedMain] ERROR k.mybatis.service.MemberService - MemberService ::::::::
+16:27:22.782 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.502 seconds (JVM running for 258.919)
+16:27:27.641 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 652 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:27:27.641 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:27:27.970 [restartedMain] ERROR k.mybatis.service.MemberService - MemberService ::::::::initialize()
+16:27:28.110 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.513 seconds (JVM running for 264.255)
+16:28:59.586 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 652 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:28:59.586 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:29:00.476 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.924 seconds (JVM running for 356.62)
+16:29:02.174 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 652 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:29:02.175 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:29:02.644 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.509 seconds (JVM running for 358.786)
+16:34:06.418 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 652 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:34:06.418 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:34:06.908 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.525 seconds (JVM running for 663.05)
+16:34:08.521 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 652 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:34:08.521 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:34:09.022 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.539 seconds (JVM running for 665.167)
+16:34:24.867 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 652 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:34:24.867 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:34:25.351 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.517 seconds (JVM running for 681.491)
+16:34:27.996 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 652 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:34:27.996 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:34:28.511 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.551 seconds (JVM running for 684.656)
+16:34:30.123 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 652 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:34:30.125 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:34:30.890 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.814 seconds (JVM running for 687.027)
+16:34:32.901 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 652 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+16:34:32.901 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+16:34:33.428 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 0.548 seconds (JVM running for 689.562)

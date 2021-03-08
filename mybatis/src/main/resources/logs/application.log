@@ -1,0 +1,395 @@
+10:25:40.313 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 6728 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+10:25:40.313 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+10:25:42.942 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commonController' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\controller\CommonController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberService' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\service\MemberService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberMapper' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\dao\MemberMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Unsatisfied dependency expressed through method 'mybatisSqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hikariDataSource' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'datasource' threw exception; nested exception is org.jasypt.exceptions.EncryptionOperationNotPossibleException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1206)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at ksmart38.mybatis.MybatisApplication.main(MybatisApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberService' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\service\MemberService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberMapper' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\dao\MemberMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Unsatisfied dependency expressed through method 'mybatisSqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hikariDataSource' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'datasource' threw exception; nested exception is org.jasypt.exceptions.EncryptionOperationNotPossibleException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1206)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberMapper' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\dao\MemberMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Unsatisfied dependency expressed through method 'mybatisSqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hikariDataSource' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'datasource' threw exception; nested exception is org.jasypt.exceptions.EncryptionOperationNotPossibleException
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1691)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1436)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Unsatisfied dependency expressed through method 'mybatisSqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hikariDataSource' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'datasource' threw exception; nested exception is org.jasypt.exceptions.EncryptionOperationNotPossibleException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 53 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hikariDataSource' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'datasource' threw exception; nested exception is org.jasypt.exceptions.EncryptionOperationNotPossibleException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 63 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'datasource' threw exception; nested exception is org.jasypt.exceptions.EncryptionOperationNotPossibleException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 77 common frames omitted
+Caused by: org.jasypt.exceptions.EncryptionOperationNotPossibleException: null
+	at org.jasypt.encryption.pbe.StandardPBEByteEncryptor.decrypt(StandardPBEByteEncryptor.java:1059)
+	at org.jasypt.encryption.pbe.StandardPBEStringEncryptor.decrypt(StandardPBEStringEncryptor.java:738)
+	at org.jasypt.encryption.pbe.PooledPBEStringEncryptor.decrypt(PooledPBEStringEncryptor.java:511)
+	at ksmart38.mybatis.config.MybatisConfig.datasource(MybatisConfig.java:30)
+	at ksmart38.mybatis.config.MybatisConfig$$EnhancerBySpringCGLIB$$f67d35e3.CGLIB$datasource$0(<generated>)
+	at ksmart38.mybatis.config.MybatisConfig$$EnhancerBySpringCGLIB$$f67d35e3$$FastClassBySpringCGLIB$$47615437.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at ksmart38.mybatis.config.MybatisConfig$$EnhancerBySpringCGLIB$$f67d35e3.datasource(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 78 common frames omitted
+10:48:19.680 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 1008 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+10:48:19.683 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+10:48:21.521 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commonController' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\controller\CommonController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberService' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\service\MemberService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberMapper' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\dao\MemberMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Unsatisfied dependency expressed through method 'mybatisSqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=hikariDataSource)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1206)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at ksmart38.mybatis.MybatisApplication.main(MybatisApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberService' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\service\MemberService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberMapper' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\dao\MemberMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Unsatisfied dependency expressed through method 'mybatisSqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=hikariDataSource)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1206)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberMapper' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\dao\MemberMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Unsatisfied dependency expressed through method 'mybatisSqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=hikariDataSource)}
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1691)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1436)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Unsatisfied dependency expressed through method 'mybatisSqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=hikariDataSource)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 53 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=hikariDataSource)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 63 common frames omitted
+10:49:01.615 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 1840 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+10:49:01.618 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+10:49:03.533 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commonController' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\controller\CommonController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberService' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\service\MemberService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberMapper' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\dao\MemberMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Unsatisfied dependency expressed through method 'mybatisSqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=hikariDataSource)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1206)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at ksmart38.mybatis.MybatisApplication.main(MybatisApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberService' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\service\MemberService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberMapper' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\dao\MemberMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Unsatisfied dependency expressed through method 'mybatisSqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=hikariDataSource)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1206)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberMapper' defined in file [D:\janghyunjin\workspace38\mybatis\target\classes\ksmart38\mybatis\dao\MemberMapper.class]: Cannot resolve reference to bean 'mybatisSqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Unsatisfied dependency expressed through method 'mybatisSqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=hikariDataSource)}
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1691)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1436)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mybatisSqlSessionFactory' defined in class path resource [ksmart38/mybatis/config/MybatisConfig.class]: Unsatisfied dependency expressed through method 'mybatisSqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=hikariDataSource)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 53 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=hikariDataSource)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 63 common frames omitted
+10:49:48.562 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Starting MybatisApplication using Java 1.8.0_144 on DESKTOP-048HU3O with PID 9072 (D:\janghyunjin\workspace38\mybatis\target\classes started by ECS in D:\janghyunjin\workspace38\mybatis)
+10:49:48.562 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - No active profile set, falling back to default profiles: default
+10:49:52.172 [restartedMain] INFO  ksmart38.mybatis.MybatisApplication - Started MybatisApplication in 4.13 seconds (JVM running for 4.945)
+10:50:34.082 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+10:50:34.082 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+10:50:34.083 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+10:50:34.084 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+10:50:34.084 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+10:50:34.084 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /favicon.ico
+10:50:34.084 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+10:50:34.091 [http-nio-80-exec-5] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+10:50:34.091 [http-nio-80-exec-5] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::null
+10:50:34.091 [http-nio-80-exec-5] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::null
+10:50:34.091 [http-nio-80-exec-5] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+10:50:34.100 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+10:50:34.100 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+10:50:34.100 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+10:50:34.100 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+10:50:34.100 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+10:50:34.100 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+10:50:34.100 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+10:50:34.101 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+10:50:34.123 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+10:50:36.274 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+10:50:36.274 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+10:50:36.275 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+10:50:36.275 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+10:50:36.275 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+10:50:36.275 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+10:50:36.275 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+10:50:36.275 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+10:50:36.295 [http-nio-80-exec-6] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+10:50:36.390 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+10:50:36.391 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+10:50:36.391 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+10:50:36.391 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+10:50:36.391 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+10:50:36.391 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /favicon.ico
+10:50:36.391 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+10:50:36.391 [http-nio-80-exec-9] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+10:50:36.391 [http-nio-80-exec-9] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::null
+10:50:36.391 [http-nio-80-exec-9] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::null
+10:50:36.391 [http-nio-80-exec-9] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+10:50:36.401 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+10:50:36.401 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+10:50:36.401 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+10:50:36.401 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+10:50:36.401 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+10:50:36.401 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+10:50:36.401 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+10:50:36.401 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+10:50:36.441 [http-nio-80-exec-10] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+10:50:40.003 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+10:50:40.004 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+10:50:40.006 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+10:50:40.007 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+10:50:40.008 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: POST
+10:50:40.008 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /login
+10:50:40.008 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+10:50:40.095 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id001';
+ {executed in 27 msec}
+10:50:40.109 [http-nio-80-exec-1] DEBUG jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT 
+			m_id
+			,m_pw
+			,m_name
+			,m_level
+			,m_email
+			,m_addr
+		FROM 
+			tb_member
+		WHERE
+			m_id = 'id001';
+ {executed in 1 msec}
+10:50:40.111 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+10:50:40.114 [http-nio-80-exec-1] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+10:50:40.241 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+10:50:40.242 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+10:50:40.242 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+10:50:40.242 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+10:50:40.242 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+10:50:40.242 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /favicon.ico
+10:50:40.242 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+10:50:40.242 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+10:50:40.242 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id001
+10:50:40.243 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::관리자
+10:50:40.245 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- END
+10:50:40.245 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+10:50:40.245 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
+10:50:40.255 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- START
+10:50:40.255 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- START
+10:50:40.255 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - PORT           :::::::::::::::::: 80
+10:50:40.255 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - serverName     :::::::::::::::::: localhost
+10:50:40.255 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - methon         :::::::::::::::::: GET
+10:50:40.255 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - URI            :::::::::::::::::: /error
+10:50:40.255 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - ACCESS INFO ---------------------------------------- END
+10:50:40.255 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- START
+10:50:40.255 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - sessionId           :::::::::::::::id001
+10:50:40.255 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - sessionLevel        :::::::::::::::관리자
+10:50:40.343 [http-nio-80-exec-3] INFO  k.m.interceptor.LoginInterceptor - LoginInterceptor --------------------------------- END
+10:50:40.343 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- END
+10:50:40.343 [http-nio-80-exec-3] INFO  k.m.interceptor.CommonInterceptor - CommonInterceptor ---------------------------------------- AFTER
